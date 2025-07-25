@@ -62,8 +62,8 @@ mysql -u root -p < .\mysql_db\school_db_classes.sql
 mysql -u root -p < .\mysql_db\school_db_subjects.sql
 mysql -u root -p < .\mysql_db\school_db_students.sql
 mysql -u root -p < .\mysql_db\school_db_bankdetails.sql
-mysql -u root -p < .\mysql_db/school_db_parents.sql
-mysql -u root -p < .\mysql_db/school_db_marks.sql
+mysql -u root -p < .\mysql_db\school_db_parents.sql
+mysql -u root -p < .\mysql_db\school_db_marks.sql
 ```
 
 **Linux/macOS:**
@@ -115,7 +115,7 @@ MYSQL_DATABASE=school_db
 
 # Ollama configuration
 BASE_URL=http://localhost:11434
-MODEL_NAME=llama3:7b
+MODEL_NAME=llama3:latest
 ```
 
 Replace `yourpassword` with your actual MySQL password. Change `BASE_URL` and `MODEL_NAME` if you use a different port or model.
@@ -179,7 +179,7 @@ The app will open in your browser at [http://localhost:8501](http://localhost:85
   - Which students have a scholarship?
   - What are the average marks in Mathematics?
   - hi (for small talk)
-- Follow-up questions are supported (e.g., "Which of them have a scholarship?").
+- Follow-up questions are not supported currently
 
 ---
 
@@ -194,7 +194,7 @@ The app will open in your browser at [http://localhost:8501](http://localhost:85
 
 ## 9. Project Structure
 ```
-RAG-solution/
+
 ├── main.py                # Main entry point
 ├── requirements.txt       # Python dependencies
 ├── README.md              # This file
