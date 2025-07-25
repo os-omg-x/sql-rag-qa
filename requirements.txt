@@ -1,0 +1,17 @@
+langchain>=0.1.14
+langchain-community>=0.0.28
+mysql-connector-python>=8.0.33
+pandas>=2.0.0
+python-dotenv>=1.0.0
+
+# For running async and memory
+langchain-core>=0.1.35
+
+# For JSON formatting and general utilities
+orjson>=3.9.10
+
+# For typing and linting (optional, for best practices)
+typing-extensions>=4.7.1
+
+# UI
+streamlit>=1.32.0
